@@ -94,7 +94,7 @@ fun Scale(
     circleCenter = Offset(center.x, scaleWidth.toPx() / 2f + radius.toPx())
     val outerRadius = radius.toPx() + scaleWidth.toPx() / 2f
     val innerRadius = radius.toPx() - scaleWidth.toPx() / 2f
-    val shadowRadius = with(density) { 4.dp.toPx() }
+    val shadowRadius = with(density) { 6.dp.toPx() }
 
     drawContext.canvas.nativeCanvas.apply {
       drawCircle(
