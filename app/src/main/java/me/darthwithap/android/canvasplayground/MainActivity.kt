@@ -10,6 +10,7 @@ import me.darthwithap.android.canvasplayground.paths.PathBasics
 import me.darthwithap.android.canvasplayground.paths.PathEffects
 import me.darthwithap.android.canvasplayground.paths.PathLineAnimation
 import me.darthwithap.android.canvasplayground.paths.PathOperations
+import me.darthwithap.android.canvasplayground.paths.TextOnPaths
 import me.darthwithap.android.canvasplayground.paths.TransformationAndClippings
 import me.darthwithap.android.canvasplayground.ui.theme.CanvasPlaygroundTheme
 
@@ -19,7 +20,7 @@ class MainActivity : ComponentActivity() {
     super.onCreate(savedInstanceState)
     setContent {
       CanvasPlaygroundTheme {
-        PathEffects()
+        TextOnPaths()
       }
     }
   }
