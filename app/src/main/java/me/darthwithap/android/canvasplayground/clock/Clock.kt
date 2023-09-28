@@ -38,8 +38,6 @@ fun Clock(
   var clockCenter by remember {
     mutableStateOf(Offset.Zero)
   }
-  val TAG = "ClockCanvasTask"
-
   LaunchedEffect(Unit) {
     while (true) {
       delay(1000)  // Update every second

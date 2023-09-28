@@ -6,6 +6,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.annotation.RequiresApi
 import me.darthwithap.android.canvasplayground.clock.Clock
+import me.darthwithap.android.canvasplayground.paths.PathBasics
 import me.darthwithap.android.canvasplayground.ui.theme.CanvasPlaygroundTheme
 
 class MainActivity : ComponentActivity() {
@@ -14,7 +15,7 @@ class MainActivity : ComponentActivity() {
     super.onCreate(savedInstanceState)
     setContent {
       CanvasPlaygroundTheme {
-        Clock()
+        PathBasics()
       }
     }
   }
