@@ -5,13 +5,9 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.annotation.RequiresApi
-import me.darthwithap.android.canvasplayground.clock.Clock
-import me.darthwithap.android.canvasplayground.paths.PathBasics
-import me.darthwithap.android.canvasplayground.paths.PathEffects
-import me.darthwithap.android.canvasplayground.paths.PathLineAnimation
-import me.darthwithap.android.canvasplayground.paths.PathOperations
-import me.darthwithap.android.canvasplayground.paths.TextOnPaths
-import me.darthwithap.android.canvasplayground.paths.TransformationAndClippings
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.ui.Modifier
+import me.darthwithap.android.canvasplayground.gender_picker.GenderPicker
 import me.darthwithap.android.canvasplayground.ui.theme.CanvasPlaygroundTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,7 +16,11 @@ class MainActivity : ComponentActivity() {
     super.onCreate(savedInstanceState)
     setContent {
       CanvasPlaygroundTheme {
-        TextOnPaths()
+        GenderPicker(
+          modifier = Modifier.fillMaxSize()
+        ) {
+
+        }
       }
     }
   }
