@@ -7,6 +7,7 @@ import androidx.activity.compose.setContent
 import androidx.annotation.RequiresApi
 import me.darthwithap.android.canvasplayground.clock.Clock
 import me.darthwithap.android.canvasplayground.paths.PathBasics
+import me.darthwithap.android.canvasplayground.paths.PathLineAnimation
 import me.darthwithap.android.canvasplayground.paths.PathOperations
 import me.darthwithap.android.canvasplayground.ui.theme.CanvasPlaygroundTheme
 
@@ -16,7 +17,7 @@ class MainActivity : ComponentActivity() {
     super.onCreate(savedInstanceState)
     setContent {
       CanvasPlaygroundTheme {
-        PathOperations()
+        PathLineAnimation()
       }
     }
   }
