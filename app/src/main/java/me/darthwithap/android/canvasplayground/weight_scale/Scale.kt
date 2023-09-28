@@ -132,7 +132,7 @@ fun Scale(
         is LineType.TenStep -> style.tenStepLineLength.toPx()
       }
 
-      val linePointOnOuterCircleEdge: Offset = Offset(
+      val linePointOnOuterCircleEdge = Offset(
         x = cos(angleInRadians) * outerRadius + circleCenter.x,
         y = sin(angleInRadians) * outerRadius + circleCenter.y
       )
