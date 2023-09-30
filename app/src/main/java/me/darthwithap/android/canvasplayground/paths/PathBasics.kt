@@ -28,8 +28,7 @@ fun PathBasics(
       color = Color.Red,
       style = Stroke(
         width = 6.dp.toPx(),
-        cap = StrokeCap.Round,
-        join = StrokeJoin.Miter
+        cap = StrokeCap.Round
       )
     )
   }
